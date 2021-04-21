@@ -84,6 +84,7 @@ Person.prototype.toString = function(){
   }
 
   Car.prototype.fill = function(gallons){
+    for(let i = 0; i < this.tank.length ; i++)
     if(this.tank.length > 0){
       this.tank.push(gallons);
     }
@@ -115,10 +116,10 @@ Person.prototype.toString = function(){
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
-    1. 
-    2. 
-    3. 
-    4. 
+    1. The first is Window Binding and the value of 'this' will be the window object.
+    2. The second principle is Implicit Binding. With Implicit Binding, the object before the dot (to the left of the dot) is 'this.'
+    3. Next is the New Binding principle. With New Binding, we use a constructor function and the 'this' refers to the new object created by the constructor function.
+    4. Finally we have Explicit Binding. In Explicit Binding, we explicitly define 'this' using '.call', '.apply', or '.bind.'
   */
   
   
