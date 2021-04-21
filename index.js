@@ -84,9 +84,8 @@ Person.prototype.toString = function(){
   }
 
   Car.prototype.fill = function(gallons){
-    for(let i = 0; i < this.tank.length ; i++)
-    if(this.tank.length > 0){
-      this.tank.push(gallons);
+    if(this.tank += gallons){
+      console.log(gallons);
     }
   }
   Car.prototype.drive = function(distance){
